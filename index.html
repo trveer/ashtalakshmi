@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashtalakshmi Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem auto 0;
+      max-width: 720px;
+      color: #555;
+    }
+    .gallery {
+      display: grid;
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: 0 auto 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .item {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .item img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .caption {
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+      color: #444;
+      border-top: 1px solid #eee;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .caption {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ashtalakshmi Image Gallery</h1>
+    <p>Browse the six images included in this project in a clean, responsive gallery layout. Click an image to open it in full size in a new tab.</p>
+  </header>
+  <main class="gallery">
+    <article class="item">
+      <a href="1.jpg" target="_blank" rel="noreferrer noopener"><img src="1.jpg" alt="Image 1"></a>
+      <div class="caption">Image 1</div>
+    </article>
+    <article class="item">
+      <a href="2.jpg" target="_blank" rel="noreferrer noopener"><img src="2.jpg" alt="Image 2"></a>
+      <div class="caption">Image 2</div>
+    </article>
+    <article class="item">
+      <a href="3.jpg" target="_blank" rel="noreferrer noopener"><img src="3.jpg" alt="Image 3"></a>
+      <div class="caption">Image 3</div>
+    </article>
+    <article class="item">
+      <a href="4.jpg" target="_blank" rel="noreferrer noopener"><img src="4.jpg" alt="Image 4"></a>
+      <div class="caption">Image 4</div>
+    </article>
+    <article class="item">
+      <a href="5.jpg" target="_blank" rel="noreferrer noopener"><img src="5.jpg" alt="Image 5"></a>
+      <div class="caption">Image 5</div>
+    </article>
+    <article class="item">
+      <a href="6.jpg" target="_blank" rel="noreferrer noopener"><img src="6.jpg" alt="Image 6"></a>
+      <div class="caption">Image 6</div>
+    </article>
+  </main>
+</body>
+</html>
